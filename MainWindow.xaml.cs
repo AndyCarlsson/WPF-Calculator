@@ -188,13 +188,14 @@ namespace TestWPF
                 txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1, 1);
                 num1 = decimal.Parse(num1.ToString().Remove(num1.ToString().Length - 1, 1));
 
+                labelCurrentOperation.Content = labelCurrentOperation.Content.ToString().Remove(labelCurrentOperation.Content.ToString().Length - 1, 1);
             }
             else
             {
                 txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1, 1);
                 num2 = decimal.Parse(num2.ToString().Remove(num2.ToString().Length - 1, 1));
-                //labelCurrentOperation.Content = num2 = decimal.Parse(num2.ToString().Remove(num2.ToString().Length - 1, 1));
 
+                labelCurrentOperation.Content = labelCurrentOperation.Content.ToString().Remove(labelCurrentOperation.Content.ToString().Length - 1, 1);
             }
 
         }
@@ -210,7 +211,8 @@ namespace TestWPF
             {
                 case "+":
                     txtDisplay.Text = (num1 + num2).ToString();
-                    labelCurrentOperation.Content = num1 + operation + num2 + "=" + (num1 + num2);
+                    labelCurrentOperation.Content = num1 + operation + num2;
+
                     break;
 
                 case "c":
@@ -220,17 +222,17 @@ namespace TestWPF
 
                 case "-":
                     txtDisplay.Text = (num1 - num2).ToString();
-                    labelCurrentOperation.Content = num1 + operation + num2 + "=" + (num1 - num2);
+                    labelCurrentOperation.Content = num1 + operation + num2;
                     break;
 
                 case "*":
                     txtDisplay.Text = (num1 * num2).ToString();
-                    labelCurrentOperation.Content = num1 + operation + num2 + "=" + (num1 * num2);
+                    labelCurrentOperation.Content = num1 + operation + num2;
                     break;
 
                 case "/":
                     txtDisplay.Text = (num1 / num2).ToString();
-                    labelCurrentOperation.Content = num1 + operation + num2 + "=" + (num1 / num2);
+                    labelCurrentOperation.Content = num1 + operation + num2;
                     break;
 
                 case "ce":
