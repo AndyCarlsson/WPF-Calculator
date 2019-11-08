@@ -158,26 +158,19 @@ namespace TestWPF
         {
             if (operation == "")
             {
-                num1 = num1 - (num1 * 2);
+                num1 = num1 * -1;
                 txtDisplay.Text = num1.ToString();
             }
             else
             {
-                num2 = num2 - (num2 * 2);
+                num2 = num2 * -1;
                 txtDisplay.Text = num2.ToString();
             }
         }
 
         private void btncomma_Click(object sender, RoutedEventArgs e)
         {
-            if (operation == "")
-            {
-                num1.ToString(txtDisplay.Text = ",");
-            }
-            else
-            {
-                num1.ToString(txtDisplay.Text = ",");
-            }
+            txtDisplay.Text = ",";
         }
 
         private void btnBack_Click(object sender, RoutedEventArgs e)
@@ -241,6 +234,10 @@ namespace TestWPF
 
                 default:
                     break;
+
+            }
+           // while ()
+            {
 
             }
             num1 = 0;
