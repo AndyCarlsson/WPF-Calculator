@@ -130,6 +130,8 @@ namespace TestWPF
             operation = "+";
             txtDisplay.Text = "+";
 
+            Console.WriteLine();
+
             labelCurrentOperation.Content = num1 + operation;
         }
 
