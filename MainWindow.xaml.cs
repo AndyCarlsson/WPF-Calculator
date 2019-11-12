@@ -170,7 +170,7 @@ namespace TestWPF
 
         private void btncomma_Click(object sender, RoutedEventArgs e)
         {
-            txtDisplay.Text = ",";
+            txtDisplay.Text += ",";
         }
 
         private void btnBack_Click(object sender, RoutedEventArgs e)
@@ -236,12 +236,10 @@ namespace TestWPF
                     break;
 
             }
-           // while ()
-            {
 
-            }
             num1 = 0;
             num2 = 0;
+            
             operation = "";
 
         }
