@@ -106,7 +106,15 @@ namespace TestWPF
 
         private void btncomma_Click(object sender, RoutedEventArgs e)
         {
-            txtDisplay.Text += ",";
+            if (txtDisplay.Text.Contains(","))
+            {
+
+            }
+            else
+            {
+                txtDisplay.Text += ",";
+            }
+            
         }
 
         private void btnBack_Click(object sender, RoutedEventArgs e)
@@ -147,53 +155,129 @@ namespace TestWPF
         }
         private void btn0_Click(object sender, RoutedEventArgs e)
         {
-            txtDisplay.Text += "0";
-            labelCurrentOperation.Content = txtDisplay.Text;
+            if (txtDisplay.Text == "0")
+            {
+                txtDisplay.Text = "0";
+            }
+            else
+            {
+                txtDisplay.Text += "0";
+                labelCurrentOperation.Content = txtDisplay.Text;
+            }
         }
         private void btn1_Click(object sender, RoutedEventArgs e)
         {
-            txtDisplay.Text += "1";
-            labelCurrentOperation.Content = txtDisplay.Text;
+            if (txtDisplay.Text == "0")
+            {
+                txtDisplay.Text = "1";
+            }
+            else
+            {
+                txtDisplay.Text += "1";
+                labelCurrentOperation.Content = txtDisplay.Text;
+            }
         }
         private void btn2_Click(object sender, RoutedEventArgs e)
         {
-            txtDisplay.Text += "2";
-            labelCurrentOperation.Content = txtDisplay.Text;
+            if (txtDisplay.Text == "0")
+            {
+                txtDisplay.Text = "2";
+            }
+            else
+            {
+                txtDisplay.Text += "2";
+                labelCurrentOperation.Content = txtDisplay.Text;
+            }
         }
         private void btn3_Click(object sender, RoutedEventArgs e)
         {
-            txtDisplay.Text += "3";
-            labelCurrentOperation.Content = txtDisplay.Text;
+            if (txtDisplay.Text == "0")
+            {
+                txtDisplay.Text = "3";
+            }
+            else
+            {
+                txtDisplay.Text += "3";
+                labelCurrentOperation.Content = txtDisplay.Text;
+            }
         }
         private void btn4_Click(object sender, RoutedEventArgs e)
         {
-            txtDisplay.Text += "4";
-            labelCurrentOperation.Content = txtDisplay.Text;
+            if (txtDisplay.Text == "0")
+            {
+                txtDisplay.Text = "4";
+            }
+            else
+            {
+                txtDisplay.Text += "4";
+                labelCurrentOperation.Content = txtDisplay.Text;
+            }
         }
         private void btn5_Click(object sender, RoutedEventArgs e)
         {
-            txtDisplay.Text += "5";
-            labelCurrentOperation.Content = txtDisplay.Text;
+            if (txtDisplay.Text == "0")
+            {
+                txtDisplay.Text = "5";
+            }
+            else
+            {
+                txtDisplay.Text += "5";
+                labelCurrentOperation.Content = txtDisplay.Text;
+            }
+            
         }
         private void btn6_Click(object sender, RoutedEventArgs e)
         {
-            txtDisplay.Text += "6";
-            labelCurrentOperation.Content = txtDisplay.Text;
+            if (txtDisplay.Text == "0")
+            {
+                txtDisplay.Text = "6";
+            }
+            else
+            {
+                txtDisplay.Text += "6";
+                labelCurrentOperation.Content = txtDisplay.Text;
+            }
         }
         private void btn7_Click(object sender, RoutedEventArgs e)
         {
-            txtDisplay.Text += "7";
-            labelCurrentOperation.Content = txtDisplay.Text;
+            if (txtDisplay.Text == "0")
+            {
+                txtDisplay.Text = "7";
+            }
+            else
+            {
+                txtDisplay.Text += "7";
+                labelCurrentOperation.Content = txtDisplay.Text;
+            }
         }
         private void btn8_Click(object sender, RoutedEventArgs e)
         {
-            txtDisplay.Text += "8";
-            labelCurrentOperation.Content = txtDisplay.Text;
+            if (txtDisplay.Text == "0")
+            {
+                txtDisplay.Text = "8";
+            }
+            else
+            {
+                txtDisplay.Text += "8";
+                labelCurrentOperation.Content = txtDisplay.Text;
+            }
         }
         private void btn9_Click(object sender, RoutedEventArgs e)
         {
-            txtDisplay.Text += "9";
-            labelCurrentOperation.Content = txtDisplay.Text;
+            if (txtDisplay.Text == "0")
+            {
+                txtDisplay.Text = "9";
+            }
+            else
+            {
+                txtDisplay.Text += "9";
+                labelCurrentOperation.Content = txtDisplay.Text;
+            }
+        }
+
+        private void txtDisplay_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }
