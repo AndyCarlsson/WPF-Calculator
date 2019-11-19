@@ -78,6 +78,13 @@ namespace TestWPF
             multiplyButtonClicked = false;
             divideButtonClicked = true;
         }
+        private void btnSqrt_Click(object sender, RoutedEventArgs e)
+        {
+            total1 += Math.Sqrt(double.Parse(txtDisplay.Text));
+            txtDisplay.Text = total1.ToString();
+
+            labelCurrentOperation.Content = txtDisplay.Text;
+        }
 
         private void btnCE_Click(object sender, RoutedEventArgs e)
         {
@@ -119,7 +126,15 @@ namespace TestWPF
 
         private void btnBack_Click(object sender, RoutedEventArgs e)
         {
-            txtDisplay.Text = txtDisplay.Text.Substring(0, txtDisplay.Text.Length - 1);
+            if (txtDisplay.Text == "")
+            {
+
+            }
+            else
+            {
+                txtDisplay.Text = txtDisplay.Text.Substring(0, txtDisplay.Text.Length - 1);
+            }
+            
         }
 
         private void btnEquals_Click(object sender, RoutedEventArgs e)
@@ -274,7 +289,6 @@ namespace TestWPF
                 labelCurrentOperation.Content = txtDisplay.Text;
             }
         }
-
         private void txtDisplay_TextChanged(object sender, TextChangedEventArgs e)
         {
 

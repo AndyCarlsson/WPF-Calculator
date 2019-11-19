@@ -22,6 +22,7 @@
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
 
         <!--Number Buttons-->
@@ -37,22 +38,29 @@
         <Button x:Name="btn9" Grid.Column="2" Grid.Row="3" Click="btn9_Click" Background="#a8c9ff" Margin="1">9</Button>
         <Button x:Name="btn0" Grid.Column="1" Grid.Row="6" Click="btn0_Click" Background="#a8c9ff" Margin="1">0</Button>
 
+        
+        <!--Remove input Buttons-->     
         <Button x:Name="btnCE" Grid.Column="0" Grid.Row="2" Click="btnCE_Click" Background="#5797ff" Margin="1">CE</Button>
         <Button x:Name="btnC" Grid.Column="1" Grid.Row="2" Click="btnC_Click" Background="#5797ff" Margin="1">C</Button>
         <Button x:Name="btnBack" Grid.Column="2" Grid.Row="2" Click="btnBack_Click" Background="#5797ff" Margin="1">Back</Button>
+       
+        <!--Operator Buttons-->
         <Button x:Name="btnPlus" Grid.Column="3" Grid.Row="2" Click="btnPlus_Click" Background="#5797ff" Margin="1">+</Button>
-
         <Button x:Name="btnMin" Grid.Column="3" Grid.Row="3" Click="btnMin_Click" Background="#5797ff" Margin="1">-</Button>
         <Button x:Name="btnTimes" Grid.Column="3" Grid.Row="4" Click="btnTimes_Click" Background="#5797ff" Margin="1">*</Button>
         <Button x:Name="btnDivide" Grid.Column="3" Grid.Row="5" Click="btnDivide_Click" Background="#5797ff" Margin="1">/</Button>
+        <Button x:Name="btnSqrt" Grid.Column="3" Grid.Row="6" Click="btnSqrt_Click" Background="#5797ff" Margin="1">√x</Button>
 
+        <!--Other Buttons-->
         <Button x:Name="btnPlusMin" Grid.Column="0" Grid.Row="6" Click="btnPlusMin_Click" Background="#5797ff" Margin="1">+-</Button>
-        <Button x:Name="btnEquals" Grid.Column="3" Grid.Row="6" Click="btnEquals_Click" Background="#5797ff" Margin="1">=</Button>
+        <Button x:Name="btnEquals" Grid.Column="0" Grid.Row="7" Click="btnEquals_Click" Background="#5797ff" Margin="1" Grid.ColumnSpan="4" FontSize="30px">=</Button>
         <Button x:Name="btncomma" Grid.Column="2" Grid.Row="6" Click="btncomma_Click" Background="#5797ff" Margin="1">,</Button>
 
+        <!--Showing Sum-->
         <TextBox x:Name="txtDisplay" IsReadOnly="True" TextAlignment="Right" VerticalAlignment="Bottom" FontSize="30" BorderThickness="0"
                  Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Background="#fff" Foreground="Black" TextChanged="txtDisplay_TextChanged" Margin="1">0</TextBox>
-
+        
+        <!--Showing Calculation-->
         <Label x:Name="labelCurrentOperation" Visibility="Visible" HorizontalAlignment="right" VerticalAlignment="Bottom" FontSize="15" Margin="1" BorderThickness="3"
                Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Background="#fff" Foreground="Black"></Label>
     </Grid>
