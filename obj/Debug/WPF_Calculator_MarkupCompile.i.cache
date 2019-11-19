@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-\\Mac\Home\Desktop\Newton\Objektorienterad Programmering 1\WPF_Calculator\obj\Debug\
+\\vmware-host\Shared Folders\Desktop\Newton\Objektorienterad Programmering 1\WPF_Calculator\obj\Debug\
 WPF_Calculator
 none
 false
 DEBUG;TRACE
-\\Mac\Home\Desktop\Newton\Objektorienterad Programmering 1\WPF_Calculator\App.xaml
+\\vmware-host\Shared Folders\Desktop\Newton\Objektorienterad Programmering 1\WPF_Calculator\App.xaml
 11151548125
 
-6-1073930967
+6-1281565336
 13-1505183044
 MainWindow.xaml;
 
-True
+False
 
