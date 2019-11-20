@@ -80,18 +80,16 @@ namespace TestWPF
         }
         private void btnSqrt_Click(object sender, RoutedEventArgs e)
         {
+            labelCurrentOperation.Content += "√" + txtDisplay.Text;
+
             total1 += Math.Sqrt(double.Parse(txtDisplay.Text));
-            txtDisplay.Text = total1.ToString();
-
-            labelCurrentOperation.Content = txtDisplay.Text;
+            txtDisplay.Text = total1.ToString();     
         }
-
         private void btnCE_Click(object sender, RoutedEventArgs e)
         {
             txtDisplay.Text = "0";
             labelCurrentOperation.Content = "";
         }
-
         private void btnC_Click(object sender, RoutedEventArgs e)
         {
             txtDisplay.Text = "0";
@@ -120,10 +118,8 @@ namespace TestWPF
             else
             {
                 txtDisplay.Text += ",";
-            }
-            
+            }    
         }
-
         private void btnBack_Click(object sender, RoutedEventArgs e)
         {
             if (txtDisplay.Text == "")
@@ -133,8 +129,7 @@ namespace TestWPF
             else
             {
                 txtDisplay.Text = txtDisplay.Text.Substring(0, txtDisplay.Text.Length - 1);
-            }
-            
+            }           
         }
 
         private void btnEquals_Click(object sender, RoutedEventArgs e)
@@ -177,7 +172,7 @@ namespace TestWPF
             else
             {
                 txtDisplay.Text += "0";
-                labelCurrentOperation.Content = txtDisplay.Text;
+                labelCurrentOperation.Content = txtDisplay.Text;              
             }
         }
         private void btn1_Click(object sender, RoutedEventArgs e)
@@ -189,7 +184,7 @@ namespace TestWPF
             else
             {
                 txtDisplay.Text += "1";
-                labelCurrentOperation.Content = txtDisplay.Text;
+                labelCurrentOperation.Content = txtDisplay.Text;              
             }
         }
         private void btn2_Click(object sender, RoutedEventArgs e)
